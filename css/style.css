@@ -1,0 +1,140 @@
+html,
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #4d4e53;
+  min-width: 290px;
+  margin: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  height: 100%;
+}
+#full_content {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  width: 100%;
+}
+.top_head {
+  width: 100%;
+  background-color: #1e1f26;
+  height: 80%;
+}
+@media (max-width: 815px) {
+  #full_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    height: 100%;
+  }
+  html,
+  body {
+    min-height: 630em;
+  }
+  .top_head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1f26;
+    height: 55px;
+  }
+}
+
+#navbar {
+  margin-right: 10px;
+  height: 100%;
+  width: 60%;
+  min-width: 300px;
+  border-right: solid;
+  overflow-y: hidden;
+  padding: 0;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+@media only screen and (max-width: 815px) {
+  #navbar {
+    margin-top: -15px;
+    height: 100%;
+    border: none;
+    max-height: 275px;
+    border-bottom: 2px solid;
+    width: 100%;
+    background-color: white;
+  }
+}
+.justify_content {
+  margin-top: 10px;
+}
+header {
+  font-size: 1.8em;
+  text-align: center;
+  color: #000000;
+}
+
+#navbar ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 88%;
+}
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+}
+#navbar li {
+  list-style: none;
+  border-top: 1px solid;
+  width: 100%;
+}
+#navbar a {
+  text-decoration: none;
+  display: block;
+  color: #4d4e53;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+#main_doc {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 815px) {
+  #main_doc {
+    padding: 20px;
+    height: 100%;
+    overflow-y: hidden;
+  }
+}
+.header_top {
+  text-align: left;
+}
+.main_article {
+  margin: 20px;
+  color: #4d4e53;
+  font-size: 0.96em;
+}
+.main_article li {
+  margin: 15px 0px 0px 20px;
+}
+.main_header {
+  text-align: left;
+}
+code {
+  background-color: #f7f7f7;
+  white-space: pre-line;
+  padding: 15px;
+  text-align: left;
+  word-break: normal;
+  line-height: 2;
+  border-radius: 5px;
+  display: block;
+  margin: 10px;
+}
+.below_section {
+  padding-bottom: 160px;
+}
